@@ -1,344 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/h.png" type="image/x-icon">
-    
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="assets/images/h.png" type="image/x-icon">
 
-    <title>Portfolio | Himanshu</title>
+  <title>Portfolio | Himanshu</title>
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-   <div class="container">
+  <div class="container">
     <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">Hey</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-           <a href="https://drive.google.com/file/d/1CTyoDvpdmUpebQ0ygEFlHBP_3CE_r1J4/view?usp=sharing"><button class="btn">Download Resume<i class="uil uil-import"></i></button></a>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
-
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Hey</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list"><a href="#home" class="nav-link active-link">Home</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#about" class="nav-link">About</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#projects" class="nav-link">Projects</a><div class="circle"></div></li>
+          <li class="nav_list"><a href="#contact" class="nav-link">Contact</a><div class="circle"></div></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <a href="https://drive.google.com/file/d/1CTyoDvpdmUpebQ0ygEFlHBP_3CE_r1J4/view?usp=sharing" target="_blank">
+          <button class="btn">View Resume<i class="uil uil-import"></i></button>
+        </a>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
 
     <!-- -------------- MAIN ---------------- -->
     <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Himanshu Rawat</span>
+      <!-- -------------- FEATURED BOX ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card"><span>Himanshu Rawat</span></div>
+          <div class="featured-name"><p>I'm <span class="typedText"></span></p></div>
+          <div class="featured-text-info">
+            <p>Full-stack developer with a strong foundation in data structures and algorithms, and a flair for building seamless, high-performance websites and applications that prioritize user experience and scalability.</p>
+          </div>
+          <div class="featured-text-btn-large">
+            <a href="mailto:himanshuu004@gmail.com"><button class="btn blue-btn">Contact</button></a>
+          </div>
+          <div class="social_icons">
+            <div class="icon"><a href="https://www.linkedin.com/in/himanshu-rawat-3ba9a9265/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon"><a href="https://github.com/himanshuu004" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+            <div class="icon">
+              <a href="https://leetcode.com/u/himanshurwt/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; height: 24px; object-fit: contain; margin-top: 2px;" />
+              </a>
             </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image"><img src="assets/images/DP.jpeg" alt="avatar"></div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn"><i class="uil uil-mouse-alt"></i><p>Scroll Down</p></a>
+        </div>
+      </section>
+
+      <!-- -------------- ABOUT BOX ---------------- -->
+      <section class="section" id="about">
+        <div class="top-header"><h1>About Me</h1></div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <h3>My introduction</h3>
+              <p>Aspiring Software Engineer currently pursuing B.Tech in Computer Science (3rd year), with a solid foundation in data structures and algorithms. Experienced in full-stack development using ReactJS, GSAP, and Locomotive to build scalable, interactive, and visually engaging web applications. Eager to contribute to impactful projects and grow through continuous learning and innovation.</p>
+              <div class="about-btn">
+                <a href="https://drive.google.com/file/d/1CTyoDvpdmUpebQ0ygEFlHBP_3CE_r1J4/view?usp=sharing" target="_blank">
+                  <button class="btn">View Resume<i class="uil uil-import"></i></button>
+                </a>
+              </div>
             </div>
-            <div class="featured-text-info">
-                <p>Full-stack developer with a strong foundation in data structures and algorithms, and a flair for building seamless, high-performance websites and applications that prioritize user experience and scalability.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-               <a href="mailto:himanshuu004@gmail.com">
-                    <button class="btn blue-btn">Hire Me</button></a>
-                    <a href="https://drive.google.com/file/d/1CTyoDvpdmUpebQ0ygEFlHBP_3CE_r1J4/view?usp=sharing"> <button class="btn">Download Resume<i class="uil uil-import"></i></button></a>
-            </div>
-            <<div class="social_icons">
-  <div class="icon">
-    <a href="https://www.linkedin.com/in/himanshu-rawat-3ba9a9265/" target="_blank">
-      <i class="uil uil-linkedin-alt"></i>
-    </a>
-  </div>
-  <div class="icon">
-    <a href="https://www.instagram.com/himanshu_bbx12/" target="_blank">
-      <i class="uil uil-instagram"></i>
-    </a>
-  </div>
-  <div class="icon">
-    <a href="https://github.com/himanshuu004" target="_blank">
-      <i class="uil uil-github-alt"></i>
-    </a>
-  </div>
-  <div class="icon">
-    <a href="https://leetcode.com/u/himanshurwt/" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width: 24px; height: 24px; object-fit: contain; margin-top: 2px;" />
-    </a>
+          </div>
+          <div class="col">
+            <!-- Skills section (restored as before) -->
+            <<div class="col">
+  <!-- Photo section (replaced skills section) -->
+  <div class="photo-box">
+    <img src="assets/image.png" alt="My Photo" style="width:70vh">
   </div>
 </div>
 
           </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/DP.jpeg" alt="avatar">
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+      <section class="section" id="projects">
+        <div class="top-header"><h1>Projects</h1></div>
+        <div class="project-container">
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/1.mp4"></video></div>
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/2.mp4"></video></div>
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/3.mp4"></video></div>
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/4.mp4"></video></div>
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/5.mp4"></video></div>
+          <div class="project-box"><video autoplay muted loop src="assets/projects pic/6.mp4"></video></div>
+        </div>
+      </section>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch!</h1>
+          <span>I’m open to any opportunity to transform ideas into high-performance, visually appealing, and interactive websites! <br> For any query, message down below.</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email: himanshuu004@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Tel: +91 8923196771</p>
             </div>
           </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
-
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>Aspiring Software Engineer currently pursuing B.Tech in Computer Science (3rd year), with a solid foundation in data structures and algorithms. Experienced in full-stack development using ReactJS, GSAP, and Locomotive to build scalable, interactive, and visually engaging web applications. Eager to contribute to impactful projects and grow through continuous learning and innovation.
-                    </p>
-                    <div class="about-btn">
-                        <a href="https://drive.google.com/file/d/1CTyoDvpdmUpebQ0ygEFlHBP_3CE_r1J4/view?usp=sharing"> <button class="btn">Download Resume<i class="uil uil-import"></i></button></a>
-                    </div>
-                </div>
+          <div class="col">
+            <div class="form-control">
+              <div class="form-inputs">
+                <input type="text" class="input-field" placeholder="Name">
+                <input type="text" class="input-field" placeholder="Email">
+              </div>
+              <div class="text-area"><textarea placeholder="Message"></textarea></div>
+              <div class="form-button"><button id="mailButton" class="btn">Send <i class="uil uil-message"></i></button></div>
             </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Skills</h3>
-                    </div>
-                    <!-- <div class="skills-list">
-                        <span><img src="assets/skill icons/asset 2.539b77bfbf547e241c83.png" alt=""></span>
-                        <span><img src="assets/skill icons/asset 3.0c375b2751cf0e37a591.png" alt=""></span>
-                        <span><img src="assets/skill icons/git.png" alt=""></span>
-                        <span><img src="assets/skill icons/js.png" alt=""></span>
-                        <span><img src="assets/skill icons/react.png" alt=""></span>
-                        <span><img src="assets/skill icons/tailwind.png" alt=""></span>
-                        <span><img src="assets/skill icons/gsap.png" alt=""></span>
-                    </div> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-<div class="flex flex-wrap gap-6 justify-center mt-10">
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-yellow-400 pl-3">Languages</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-java-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-cplusplus-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-python-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-javascript-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-indigo-400 pl-3">Backend</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-nodejs-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-express-original" style="font-size: 3.5rem;"></i>
-      <i class="devicon-php-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-blue-400 pl-3">Frontend</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-react-original colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-tailwindcss-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-html5-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-css3-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-bootstrap-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-green-400 pl-3">Cloud/Databases</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-mongodb-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-mysql-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-firebase-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-purple-400 pl-3">Tools/Web</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-git-plain colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-vercel-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-  
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-red-400 pl-3">Core CS</h3>
-    <div class="flex flex-wrap gap-3">
-      </div>
-  </div>
-
-  <div class="bg-gray-800 p-6 rounded-2xl shadow-xl w-72 hover:shadow-2xl transition-all duration-300">
-    <h3 class="text-xl font-bold text-white mb-4 border-l-4 border-cyan-400 pl-3">ML</h3>
-    <div class="flex flex-wrap gap-3">
-      <i class="devicon-tensorflow-original colored" style="font-size: 3.5rem;"></i>
-      <i class="devicon-keras-plain colored" style="font-size: 3.5rem;"></i>
-    </div>
-  </div>
-
-</div>
           </div>
-       </section>
-
-       <!-- -------------- PROJECT BOX ---------------- -->
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-
-            <div class="project-box">
-               <video autoplay muted loop src="assets/projects pic/1.mp4"></video>
-            </div>
-
-            <div class="project-box">
-                <video autoplay muted loop src="assets/projects pic/2.mp4"></video>
-             </div>
-
-             <div class="project-box">
-                <video autoplay muted loop src="assets/projects pic/3.mp4"></video>
-             </div>
-
-             <div class="project-box">
-                <video autoplay muted loop src="assets/projects pic/4.mp4"></video>
-             </div>
-
-             <div class="project-box">
-                <video autoplay muted loop src="assets/projects pic/5.mp4"></video>
-             </div>
-
-             <div class="project-box">
-                <video autoplay muted loop src="assets/projects pic/6.mp4"></video>
-             </div>
-            
-            
-          
-
-            <!-- <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Clients</h3>
-                <label>25+ Happy Clients</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>7+ Years in the field</label>
-            </div> -->
-
-          </div>
-       </section>
-
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch!</h1>
-            <span> I’m open to any opportunity to transform ideas into high-performance, visually appealing, and interactive websites! <br> for any Query message down below.</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: himanshuu004@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +91 8923196771</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-          
-                        <button id="mailButton" id="mailButton" class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-
+        </div>
+      </section>
     </main>
-
 
     <!-- --------------- FOOTER --------------- -->
     <footer>
-        <div class="top-footer">
-            <p>Himanshu Rawat</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><a href="https://www.instagram.com/himanshu_bbx12/"><i class="uil uil-instagram"></i></a></div>
-
-                <div class="icon"><a href="https://www.linkedin.com/in/himanshu-rawat-3ba9a9265/"><i class="uil uil-linkedin-alt"></i></a></div>
-                <!-- <div class="icon"><i class="uil uil-leetcode"></i></div> -->
-                <div class="icon"><a href="https://github.com/himanshuu004"><i class="uil uil-github-alt"></i></a></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;"> Himanshu Rawat/a> - All rights reserved</p>
-        </div>
+      <div class="top-footer"><p>Himanshu Rawat</p></div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list"><a href="#home">Home</a></li>
+          <li class="footer_menu_list"><a href="#about">About</a></li>
+          <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+          <li class="footer_menu_list"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><a href="https://www.instagram.com/himanshu_bbx12/"><i class="uil uil-instagram"></i></a></div>
+        <div class="icon"><a href="https://www.linkedin.com/in/himanshu-rawat-3ba9a9265/"><i class="uil uil-linkedin-alt"></i></a></div>
+        <div class="icon"><a href="https://github.com/himanshuu004"><i class="uil uil-github-alt"></i></a></div>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Himanshu Rawat</a> - All rights reserved</p>
+      </div>
     </footer>
+  </div>
 
-    </div>
-
-
-
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- ----- MAIN JS ----- -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
